@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文化祭ゲームコーナー ルールブック</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!-- ヒーローセクション -->
+    <div class="hero">
+        <h1>ゲームコーナー</h1>
+        <p>文化祭へようこそ！3つの楽しいゲームで遊ぼう</p>
+    </div>
+
+    <!-- ナビゲーション -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="#welcome" class="nav-link">トップ</a>
+            <a href="#reflex" class="nav-link">反射神経</a>
+            <a href="#hockey" class="nav-link">ホッケー</a>
+            <a href="#crane" class="nav-link">クレーン</a>
+            <a href="#layout" class="nav-link">配置図</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <!-- ウェルカムセクション -->
+        <section id="welcome">
+            <h2 class="section-title">ようこそゲームコーナーへ！</h2>
+            <p style="text-align: center; font-size: 18px; color: #666; margin-bottom: 40px;">
+                3つのエキサイティングなゲームで楽しもう！各ゲームのルールをしっかり確認してから遊んでね。
+            </p>
+
+            <div class="welcome-images">
+                <div class="welcome-card">
+                    <div class="welcome-card-image">反射神経ゲーム</div>
+                    <div class="welcome-card-content">
+                        <p>光ったボタンを素早く押そう！ランキング上位を目指せ！</p>
+                    </div>
+                </div>
+                <div class="welcome-card">
+                    <div class="welcome-card-image">エアホッケー</div>
+                    <div class="welcome-card-content">
+                        <p>友達と白熱の対決！2分半の真剣勝負！</p>
+                    </div>
+                </div>
+                <div class="welcome-card">
+                    <div class="welcome-card-image">クレーンゲーム</div>
+                    <div class="welcome-card-content">
+                        <p>景品をゲット！君の腕前を試してみよう！</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 反射神経ゲーム -->
+        <section id="reflex">
+            <div class="game-section">
+                <div class="game-header red">
+                    <h3>反射神経ゲーム</h3>
+                    <p>スピードとリフレックスを試そう！</p>
+                </div>
+                <div class="game-content">
+                    <div class="game-image-container">
+                        <svg class="game-image" viewBox="0 0 400 350" style="height: 350px;">
+                            <defs>
+                                <linearGradient id="redGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#FF4757;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#FF6B9D;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                            <rect width="400" height="350" fill="#2C3E50" />
+                            <rect x="50" y="50" width="300" height="250" rx="20" fill="#34495E" stroke="#FFD700"
+                                stroke-width="4" />
+                            <circle cx="120" cy="120" r="30" fill="#FF4757" opacity="0.9" />
+                            <circle cx="200" cy="120" r="30" fill="#FFA502" opacity="0.3" />
+                            <circle cx="280" cy="120" r="30" fill="#4CAF50" opacity="0.3" />
+                            <circle cx="120" cy="200" r="30" fill="#2196F3" opacity="0.3" />
+                            <circle cx="200" cy="200" r="30" fill="#9C27B0" opacity="0.3" />
+                            <circle cx="280" cy="200" r="30" fill="#FF6F00" opacity="0.3" />
+                            <text x="200" y="280" text-anchor="middle" fill="#FFD700" font-size="36"
+                                font-weight="bold">30秒</text>
+                        </svg>
+                    </div>
+                    <div class="game-rules">
+                        <h4>遊び方</h4>
+                        <ul class="rule-list">
+                            <li>LEDが光ったところに対応するボタンを押してください</li>
+                            <li>成功したらブザーが鳴ります（これで1ポイント！）</li>
+                            <li>制限時間は30秒です</li>
+                            <li>タイムアップになったらポイントの数だけブザーが鳴ります</li>
+                            <li>高得点だったものはランキングに掲載されます</li>
+                        </ul>
+                        <div class="highlight-box">
+                            コツ：光ったらすぐに反応！<br>
+                            素早く正確に押すのがポイントです！<br>
+                            集中力を高めて挑戦しよう！
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- エアホッケー -->
+        <section id="hockey">
+            <div class="game-section">
+                <div class="game-header blue">
+                    <h3>エアホッケー</h3>
+                    <p>白熱の対決を楽しもう！</p>
+                </div>
+                <div class="game-content">
+                    <div class="game-image-container">
+                        <svg class="game-image" viewBox="0 0 400 350" style="height: 350px;">
+                            <defs>
+                                <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#5352ED;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#3742FA;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                            <rect width="400" height="350" fill="url(#blueGrad)" />
+                            <rect x="30" y="50" width="340" height="250" fill="#E8E8FF" stroke="#5352ED"
+                                stroke-width="5" />
+                            <line x1="200" y1="50" x2="200" y2="300" stroke="#5352ED" stroke-width="3"
+                                stroke-dasharray="10,5" />
+                            <circle cx="200" cy="175" r="40" fill="none" stroke="#5352ED" stroke-width="3" />
+                            <rect x="35" y="135" width="15" height="80" rx="5" fill="#FF4757" />
+                            <rect x="350" y="135" width="15" height="80" rx="5" fill="#4CAF50" />
+                            <circle cx="200" cy="175" r="15" fill="white" stroke="#333" stroke-width="2" />
+                            <text x="200" y="330" text-anchor="middle" fill="#fff" font-size="24"
+                                font-weight="bold">2分30秒</text>
+                        </svg>
+                    </div>
+                    <div class="game-rules blue">
+                        <h4>遊び方</h4>
+                        <ul class="rule-list blue">
+                            <li>受付で名前を教えてください<br>
+                                (ニックネームなども可能です)</li>
+                            <li>2分30秒で勝負します</li>
+                            <li>勢いよく飛んで外に飛び出してしまったら−1点になります</li>
+                            <li>相手のゴールにパックを入れて得点しよう</li>
+                            <li>時間内により多くの得点を獲得した人が勝ち！</li>
+                        </ul>
+                        <div class="highlight-box">
+                            注意：パックを外に飛ばすと減点！<br>
+                            コントロールが重要です！<br>
+                            フェアプレーで楽しく遊びましょう。
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- クレーンゲーム -->
+        <section id="crane">
+            <div class="game-section">
+                <div class="game-header yellow">
+                    <h3>クレーンゲーム</h3>
+                    <p>景品をゲットしよう！</p>
+                </div>
+                <div class="game-content">
+                    <div class="game-image-container">
+                        <svg class="game-image" viewBox="0 0 400 350" style="height: 350px;">
+                            <defs>
+                                <linearGradient id="yellowGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#FFA502;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#FF6348;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                            <rect width="400" height="350" fill="url(#yellowGrad)" />
+                            <rect x="50" y="40" width="300" height="270" fill="#FFF9E6" stroke="#FF6348"
+                                stroke-width="4" />
+                            <rect x="60" y="50" width="20" height="200" fill="#E0E0E0" />
+                            <rect x="320" y="50" width="20" height="200" fill="#E0E0E0" />
+                            <rect x="60" y="50" width="280" height="15" fill="#C0C0C0" />
+                            <line x1="200" y1="65" x2="200" y2="150" stroke="#FFD700" stroke-width="4" />
+                            <path d="M 180,150 L 200,170 L 220,150" fill="#FFD700" stroke="#FF6348" stroke-width="2" />
+                            <circle cx="120" cy="250" r="20" fill="#FF69B4" />
+                            <circle cx="200" cy="260" r="18" fill="#4CAF50" />
+                            <circle cx="270" cy="255" r="22" fill="#2196F3" />
+                            <rect x="150" y="240" width="30" height="30" fill="#FFA502" rx="3" />
+                            <text x="200" y="320" text-anchor="middle" fill="#333" font-size="20"
+                                font-weight="bold">景品GET!</text>
+                        </svg>
+                    </div>
+                    <div class="game-rules yellow">
+                        <h4>遊び方</h4>
+                        <ul class="rule-list yellow">
+                            <li>目の前のボタンでクレーンを操作します</li>
+                            <li>左右ボタンでクレーンを移動させます</li>
+                            <li>下降ボタンでクレーンを下ろします</li>
+                            <li>景品をうまく掴んで取り出し口まで運びます</li>
+                            <li>獲得した景品は持ち帰れます！</li>
+                        </ul>
+                        <div class="highlight-box">
+                            コツ：景品の位置をよく見て、<br>
+                            狙いを定めてからボタンを押そう！<br>
+                            タイミングが大事です！
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 配置図 -->
+        <section id="layout">
+            <h2 class="section-title">教室の配置図</h2>
+            <div class="layout-section">
+                <div class="layout-grid">
+                    <div class="layout-image-wrapper">
+                        <svg class="layout-svg" viewBox="0 0 1300 850" xmlns="http://www.w3.org/2000/svg">
+                            <!-- 背景 -->
+                            <rect width="1300" height="850" fill="#F5F5F5" />
+
+                            <!-- 教室の外枠 -->
+                            <rect x="20" y="20" width="1260" height="810" fill="none" stroke="#333" stroke-width="5" />
+
+                            <!-- 黒板 -->
+                            <rect x="325" y="40" width="650" height="70" fill="#2C3E50" stroke="#1A252F"
+                                stroke-width="3" />
+                            <text x="650" y="82" text-anchor="middle" fill="white" font-size="32"
+                                font-weight="bold">黒板</text>
+
+                            <!-- ホッケー（左側） -->
+                            <rect x="40" y="150" width="620" height="410" fill="#E3F2FD" stroke="#2196F3"
+                                stroke-width="5" rx="15" />
+                            <text x="350" y="340" text-anchor="middle" font-size="48" font-weight="bold"
+                                fill="#1976D2">ホッケー</text>
+
+                            <!-- ホッケー台の詳細 -->
+                            <rect x="100" y="220" width="500" height="280" fill="#BBDEFB" stroke="#1976D2"
+                                stroke-width="3" rx="10" />
+                            <line x1="350" y1="220" x2="350" y2="500" stroke="#1976D2" stroke-width="3"
+                                stroke-dasharray="15,10" />
+                            <circle cx="350" cy="360" r="50" fill="none" stroke="#1976D2" stroke-width="3" />
+
+                            <!-- ゴール -->
+                            <rect x="105" y="310" width="20" height="100" rx="5" fill="#F44336" />
+                            <rect x="575" y="310" width="20" height="100" rx="5" fill="#4CAF50" />
+
+                            <!-- パック -->
+                            <circle cx="350" cy="360" r="18" fill="white" stroke="#333" stroke-width="2" />
+                            <text x="350" y="530" text-anchor="middle" font-size="24" fill="#1976D2">2分30秒の対決</text>
+
+                            <!-- クレーンゲーム（右上） -->
+                            <rect x="700" y="150" width="560" height="270" fill="#FFF3E0" stroke="#FF9800"
+                                stroke-width="5" rx="15" />
+                            <text x="980" y="260" text-anchor="middle" font-size="42" font-weight="bold"
+                                fill="#E65100">クレーンゲーム</text>
+
+                            <!-- クレーンの構造 -->
+                            <rect x="800" y="200" width="30" height="180" fill="#9E9E9E" />
+                            <rect x="1130" y="200" width="30" height="180" fill="#9E9E9E" />
+                            <rect x="800" y="200" width="360" height="25" fill="#757575" />
+
+                            <!-- クレーンのアーム -->
+                            <line x1="980" y1="225" x2="980" y2="300" stroke="#FFD700" stroke-width="6" />
+                            <path d="M 950,300 L 980,330 L 1010,300" fill="#FFD700" stroke="#FF6348" stroke-width="3" />
+
+                            <!-- 景品 -->
+                            <circle cx="900" cy="355" r="22" fill="#FF69B4" />
+                            <circle cx="980" cy="365" r="20" fill="#4CAF50" />
+                            <circle cx="1050" cy="360" r="24" fill="#2196F3" />
+                            <rect x="950" y="345" width="35" height="35" fill="#FFA502" rx="4" />
+
+                            <text x="980" y="405" text-anchor="middle" font-size="20" fill="#E65100">景品をGET！</text>
+
+                            <!-- 反射神経ゲーム（左下） -->
+                            <rect x="40" y="600" width="620" height="210" fill="#FFEBEE" stroke="#F44336"
+                                stroke-width="5" rx="15" />
+                            <text x="350" y="685" text-anchor="middle" font-size="42" font-weight="bold"
+                                fill="#C62828">反射神経ゲーム</text>
+
+                            <!-- LEDボタン -->
+                            <circle cx="150" cy="730" r="20" fill="#F44336" />
+                            <circle cx="240" cy="730" r="20" fill="#FF9800" opacity="0.3" />
+                            <circle cx="330" cy="730" r="20" fill="#FFEB3B" opacity="0.3" />
+                            <circle cx="420" cy="730" r="20" fill="#4CAF50" opacity="0.3" />
+                            <circle cx="510" cy="730" r="20" fill="#2196F3" opacity="0.3" />
+
+                            <text x="350" y="775" text-anchor="middle" font-size="24" fill="#C62828"
+                                font-weight="bold">30秒で何ポイント？</text>
+
+                            <!-- 空きスペース -->
+                            <rect x="700" y="460" width="560" height="350" fill="#FAFAFA" stroke="#999" stroke-width="4"
+                                stroke-dasharray="15,10" rx="15" />
+                            <text x="980" y="635" text-anchor="middle" font-size="28" fill="#666"
+                                font-weight="bold">（空きスペース）</text>
+
+                            <!-- 入口の表示 -->
+                            <rect x="1255" y="380" width="25" height="120" fill="#4CAF50" stroke="#2E7D32"
+                                stroke-width="3" />
+                            <polygon points="1250,370 1280,395 1250,420" fill="#4CAF50" />
+                            <text x="1220" y="445" text-anchor="end" font-size="26" font-weight="bold" fill="#2E7D32">← 入口</text>
+                        </svg>
+                    </div>
+                    <div class="layout-info">
+                        <h4>配置のポイント</h4>
+                        <ul>
+                            <li>入口から入ってすぐ右側に黒板があります</li>
+                            <li>左側にエアホッケー台が設置されています</li>
+                            <li>右上にクレーンゲームが配置されています</li>
+                            <li>左下に反射神経ゲームのエリアがあります</li>
+                            <li>右下は空きスペースとして確保しています</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>© 2025 文化祭実行委員会</p>
+    </footer>
+</body>
+</html>
