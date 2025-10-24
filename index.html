@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>文化祭ゲームコーナー ルールブック</title>
     <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
     <!-- ヒーローセクション -->
     <div class="hero">
-        <h1>ゲームコーナー</h1>
-        <p>文化祭へようこそ！3つの楽しいゲームで遊ぼう</p>
+        <h1>二年電子情報科</h1>
+        <p>2年電子情報科へようこそ！3つの楽しいゲームで遊ぼう</p>
     </div>
 
     <!-- ナビゲーション -->
@@ -29,27 +31,33 @@
         <section id="welcome">
             <h2 class="section-title">ようこそゲームコーナーへ！</h2>
             <p style="text-align: center; font-size: 18px; color: #666; margin-bottom: 40px;">
-                3つのエキサイティングなゲームで楽しもう！各ゲームのルールをしっかり確認してから遊んでね。
+                3つのゲームを楽しもう!!各ゲームのルールをしっかり確認してから遊んでね。
             </p>
 
             <div class="welcome-images">
                 <div class="welcome-card">
-                    <div class="welcome-card-image">反射神経ゲーム</div>
-                    <div class="welcome-card-content">
-                        <p>光ったボタンを素早く押そう！ランキング上位を目指せ！</p>
-                    </div>
+                    <a href="#reflex" class="dec">
+                        <div class="welcome-card-image">反射神経ゲーム</div>
+                        <div class="welcome-card-content">
+                            <p>光ったボタンを素早く押そう！ランキング上位を目指せ！</p>
+                        </div>
+                    </a>
                 </div>
                 <div class="welcome-card">
-                    <div class="welcome-card-image">エアホッケー</div>
-                    <div class="welcome-card-content">
-                        <p>友達と白熱の対決！2分半の真剣勝負！</p>
-                    </div>
+                    <a href="#hockey" class="dec">
+                        <div class="welcome-card-image">エアホッケー</div>
+                        <div class="welcome-card-content">
+                            <p>友達と白熱の対決！2分半の真剣勝負！</p>
+                        </div>
+                    </a>
                 </div>
                 <div class="welcome-card">
-                    <div class="welcome-card-image">クレーンゲーム</div>
-                    <div class="welcome-card-content">
-                        <p>景品をゲット！君の腕前を試してみよう！</p>
-                    </div>
+                    <a href="#crane" class="dec">
+                        <div class="welcome-card-image">クレーンゲーム</div>
+                        <div class="welcome-card-content">
+                            <p>君の腕前を試してみよう！</p>
+                        </div>
+                    </a>
                 </div>
             </div>
         </section>
@@ -137,7 +145,7 @@
                             <li>受付で名前を教えてください<br>
                                 (ニックネームなども可能です)</li>
                             <li>2分30秒で勝負します</li>
-                            <li>勢いよく飛んで外に飛び出してしまったら−1点になります</li>
+                            <li>勢いよく飛んで外に飛び出してしまったら-1点になります</li>
                             <li>相手のゴールにパックを入れて得点しよう</li>
                             <li>時間内により多くの得点を獲得した人が勝ち！</li>
                         </ul>
@@ -156,7 +164,7 @@
             <div class="game-section">
                 <div class="game-header yellow">
                     <h3>クレーンゲーム</h3>
-                    <p>景品をゲットしよう！</p>
+                    <p>タイムアタック！焦らず正確に！</p>
                 </div>
                 <div class="game-content">
                     <div class="game-image-container">
@@ -179,21 +187,19 @@
                             <circle cx="200" cy="260" r="18" fill="#4CAF50" />
                             <circle cx="270" cy="255" r="22" fill="#2196F3" />
                             <rect x="150" y="240" width="30" height="30" fill="#FFA502" rx="3" />
-                            <text x="200" y="320" text-anchor="middle" fill="#333" font-size="20"
-                                font-weight="bold">景品GET!</text>
                         </svg>
                     </div>
                     <div class="game-rules yellow">
                         <h4>遊び方</h4>
                         <ul class="rule-list yellow">
+                            <li>プロジェクターに表示されています</li>
                             <li>目の前のボタンでクレーンを操作します</li>
-                            <li>左右ボタンでクレーンを移動させます</li>
-                            <li>下降ボタンでクレーンを下ろします</li>
-                            <li>景品をうまく掴んで取り出し口まで運びます</li>
-                            <li>獲得した景品は持ち帰れます！</li>
+                            <li>←ボタンを押して左右の位置を決め</li>
+                            <li>↑ボタンを押して前後の位置を決め</li>
+                            <li>↑ボタンを離すと勝手にクレーンが降下します</li>
                         </ul>
                         <div class="highlight-box">
-                            コツ：景品の位置をよく見て、<br>
+                            コツ：ブロックの位置をよく見て、<br>
                             狙いを定めてからボタンを押そう！<br>
                             タイミングが大事です！
                         </div>
@@ -240,12 +246,13 @@
 
                             <!-- パック -->
                             <circle cx="350" cy="360" r="18" fill="white" stroke="#333" stroke-width="2" />
-                            <text x="350" y="530" text-anchor="middle" font-size="24" fill="#1976D2">2分30秒の対決</text>
+                            <text x="350" y="540" text-anchor="middle" font-size="42" fill="#1976D2"
+                                font-weight="bold">エアホッケー</text>
 
                             <!-- クレーンゲーム（右上） -->
                             <rect x="700" y="150" width="560" height="270" fill="#FFF3E0" stroke="#FF9800"
                                 stroke-width="5" rx="15" />
-                            <text x="980" y="260" text-anchor="middle" font-size="42" font-weight="bold"
+                            <text x="980" y="190" text-anchor="middle" font-size="42" font-weight="bold"
                                 fill="#E65100">クレーンゲーム</text>
 
                             <!-- クレーンの構造 -->
@@ -263,7 +270,6 @@
                             <circle cx="1050" cy="360" r="24" fill="#2196F3" />
                             <rect x="950" y="345" width="35" height="35" fill="#FFA502" rx="4" />
 
-                            <text x="980" y="405" text-anchor="middle" font-size="20" fill="#E65100">景品をGET！</text>
 
                             <!-- 反射神経ゲーム（左下） -->
                             <rect x="40" y="600" width="620" height="210" fill="#FFEBEE" stroke="#F44336"
@@ -278,30 +284,32 @@
                             <circle cx="420" cy="730" r="20" fill="#4CAF50" opacity="0.3" />
                             <circle cx="510" cy="730" r="20" fill="#2196F3" opacity="0.3" />
 
-                            <text x="350" y="775" text-anchor="middle" font-size="24" fill="#C62828"
-                                font-weight="bold">30秒で何ポイント？</text>
 
                             <!-- 空きスペース -->
                             <rect x="700" y="460" width="560" height="350" fill="#FAFAFA" stroke="#999" stroke-width="4"
                                 stroke-dasharray="15,10" rx="15" />
                             <text x="980" y="635" text-anchor="middle" font-size="28" fill="#666"
-                                font-weight="bold">（空きスペース）</text>
+                                font-weight="bold">受付(待機列)</text>
 
                             <!-- 入口の表示 -->
-                            <rect x="1255" y="380" width="25" height="120" fill="#4CAF50" stroke="#2E7D32"
+                            <rect x="1255" y="700" width="25" height="120" fill="#4CAF50" stroke="#2E7D32"
                                 stroke-width="3" />
-                            <polygon points="1250,370 1280,395 1250,420" fill="#4CAF50" />
-                            <text x="1220" y="445" text-anchor="end" font-size="26" font-weight="bold" fill="#2E7D32">← 入口</text>
+                            <text x="1250" y="760" text-anchor="end" font-size="26" font-weight="bold"
+                                fill="#2E7D32">入口</text>
+                            <!-- 出口の表示 -->
+                            <rect x="1255" y="100" width="25" height="120" fill="#4CAF50" stroke="#2E7D32"
+                                stroke-width="3" />
+                            <text x="1250" y="140" text-anchor="end" font-size="26" font-weight="bold"
+                                fill="#2E7D32">出口</text>
                         </svg>
                     </div>
                     <div class="layout-info">
                         <h4>配置のポイント</h4>
                         <ul>
-                            <li>入口から入ってすぐ右側に黒板があります</li>
-                            <li>左側にエアホッケー台が設置されています</li>
-                            <li>右上にクレーンゲームが配置されています</li>
-                            <li>左下に反射神経ゲームのエリアがあります</li>
-                            <li>右下は空きスペースとして確保しています</li>
+                            <li>入口から入ってすぐ左側に反射神経ゲームのエリアがあります</li>
+                            <li>右奥にエアホッケー台が設置されています</li>
+                            <li>右手前にクレーンゲームが配置されています</li>
+                            <li>入った右側は空きスペースとして確保しています</li>
                         </ul>
                     </div>
                 </div>
@@ -310,7 +318,8 @@
     </div>
 
     <footer>
-        <p>© 2025 文化祭実行委員会</p>
+        <p>© 2025 2N 810</p>
     </footer>
 </body>
+
 </html>

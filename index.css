@@ -58,10 +58,6 @@ body {
     transition: all 0.3s;
 }
 
-.nav-link:hover {
-    background: #667eea;
-    color: white;
-}
 
 /* コンテナ */
 .container {
@@ -95,6 +91,10 @@ section {
     height: 3px;
     background: linear-gradient(90deg, #667eea, #764ba2);
     border-radius: 2px;
+}
+
+.dec{
+    text-decoration: none;
 }
 
 /* ゲームカード */
